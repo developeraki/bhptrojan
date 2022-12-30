@@ -13,10 +13,10 @@ from datetime import datetime
 def github_connect():
     with open('token.txt') as f:
         token = f.read()
-    user = 'developeraki'
+    user = 'your username'
     sess = github3.login(token=token)
     print('connected to github')
-    return sess.repository(user, 'bhptrojan')
+    return sess.repository(user, 'ur_repository')
 
 def get_file_contents(dirname, module_name, repo):
     return repo.file_contents(f'{dirname}/{module_name}').content
